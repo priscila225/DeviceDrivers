@@ -1,0 +1,1 @@
+cmd_/home/MonRa/Downloads/arm/gpio/gpio.ko := arm-linux-ld -EL -r  -T /home/MonRa/Downloads/arm/linux-2.6.32.2/scripts/module-common.lds --build-id -o /home/MonRa/Downloads/arm/gpio/gpio.ko /home/MonRa/Downloads/arm/gpio/gpio.o /home/MonRa/Downloads/arm/gpio/gpio.mod.o

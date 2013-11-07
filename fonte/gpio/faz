@@ -1,0 +1,4 @@
+#!/bin/sh
+make
+cp gpio.ko /media/C2F0-7B8C/
+umount /dev/sdc1

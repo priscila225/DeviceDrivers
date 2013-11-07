@@ -1,0 +1,35 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+
+function callCGI(event){
+	var keyCode = event.which;
+	if (keyCode == undefined)
+		keyCode = event.keyCode;
+  
+	var xh = new XMLHttpRequest();  
+	xh.open("GET", "gpio.cgi?Var1="+keyCode, false);
+	xh.send(null);
+}
+
+function callCGIp(event){  
+	var keyCode = event.which;
+	if (keyCode == undefined)
+		keyCode = event.keyCode;
+
+	var xh = new XMLHttpRequest();
+	xh.open("GET", "gpio.cgi?Var1="+keyCode*2, false);
+	xh.send(null);
+}
+
+</script>
+
+</head>
+
+<body onkeydown="callCGI(event);" onkeyup="callCGIp(event);"/>
+
+</body>
+
+</html>
