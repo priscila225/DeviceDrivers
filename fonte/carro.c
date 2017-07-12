@@ -1,5 +1,7 @@
 #include <stdio.h>
+
 char bits[2];
+
 void motor(){
 	FILE *file;
 	file = fopen("/dev/gpio0", "w");
@@ -9,6 +11,7 @@ void motor(){
     	putc(bits[1],file);
     	fclose(file);
 }
+
 void direcao(){
 	FILE *file;
 	file = fopen("/dev/gpio2", "w");
